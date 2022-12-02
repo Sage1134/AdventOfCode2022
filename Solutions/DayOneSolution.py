@@ -1,6 +1,5 @@
 input = open("File.txt")
 lines = input.readlines()
-
 Value = 0
 Calories = []
 
