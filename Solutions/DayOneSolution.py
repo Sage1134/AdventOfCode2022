@@ -1,7 +1,5 @@
-input = open("File.txt")
-lines = input.readlines()
-Value = 0
-Calories = []
+input = open("Inputs\DayOneInput"); lines = input.readlines()
+Value = 0; Calories = []
 
 for i in lines:
 	if i != "\n":
