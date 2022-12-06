@@ -1,6 +1,1 @@
-def iterateString(line, val):
-    for i in range(val, len(line)):
-        if len(set(line[i - val:i])) == len(list(line[i - val:i])):
-            return i
-
-print(iterateString(open("Inputs\DaySixInput").readlines()[0], 4), iterateString(open("Inputs\DaySixInput").readlines()[0], 14))
+print([i for i in range(4, len(open("Inputs\DaySixInput").readlines()[0])) if len(set(open("Inputs\DaySixInput").readlines()[0][i - 4:i])) == len(list(open("Inputs\DaySixInput").readlines()[0][i - 4:i]))][0], [i for i in range(14, len(open("Inputs\DaySixInput").readlines()[0])) if len(set(open("Inputs\DaySixInput").readlines()[0][i - 14:i])) == len(list(open("Inputs\DaySixInput").readlines()[0][i - 14:i]))][0])
